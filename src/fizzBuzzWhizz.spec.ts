@@ -25,4 +25,14 @@ test('should return FizzBuzz when number is multiple of 3 and 5', () => {
     const result = game(15);
     expect(result).toEqual('FizzBuzz');
   });
+  test.each([
+    [4, 4],
+    [9, 'Fizz'],
+    [10, 'Buzz'],
+    [20, 'Buzz'],
+    [30, 'FizzBuzz'],
+    [75, 'FizzBuzz'],
+  ])('game(%i) should return %s', (input, expected) => {
+    expect(game(input)).toEqual(expected);
+  });
 });
