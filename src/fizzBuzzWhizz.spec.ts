@@ -13,5 +13,8 @@ describe('FizzBuzz Game', () => {
     const result = game(3);
     expect(result).toEqual('Fizz');
   });
-
+test('should return Fizz when number is multiple of 3', () => {
+    const result = game(6);
+    expect(result).toEqual('Fizz');
+  });
 });
