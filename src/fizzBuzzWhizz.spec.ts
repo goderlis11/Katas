@@ -9,9 +9,9 @@ describe('FizzBuzz Game', () => {
     const result = game(2);
   expect(result).toEqual("Whizz");
   });
-  test('should return Fizz when number is 3', () => {
+  test('should return FizzWhizz when number is 3', () => {
     const result = game(3);
-    expect(result).toEqual('Fizz');
+   expect(result).toEqual('FizzWhizz');
   });
 test('should return Fizz when number is multiple of 3', () => {
     const result = game(6);
