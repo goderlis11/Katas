@@ -5,9 +5,9 @@ describe('FizzBuzz Game', () => {
     const result = game(1);
     expect(result).toEqual(1);
   });
-  test('should works 2', () => {
+  test('should return Whizz when number is 2', () => {
     const result = game(2);
-    expect(result).toEqual(2);
+  expect(result).toEqual("Whizz");
   });
   test('should return Fizz when number is 3', () => {
     const result = game(3);
