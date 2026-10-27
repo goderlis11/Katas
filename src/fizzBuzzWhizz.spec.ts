@@ -17,9 +17,9 @@ test('should return Fizz when number is multiple of 3', () => {
     const result = game(6);
     expect(result).toEqual('Fizz');
   });
-  test('should return Buzz when number is multiple of 5', () => {
+  test('should return BuzzWhizz when number is 5', () => {
     const result = game(5);
-    expect(result).toEqual('Buzz');
+    expect(result).toEqual('BuzzWhizz');
   });
 test('should return FizzBuzz when number is multiple of 3 and 5', () => {
     const result = game(15);
